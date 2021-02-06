@@ -1,4 +1,4 @@
-##/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ Generic Notification System /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\##   
+## Generic Notification System ##   
 ## Problem Statement 
 Most applications have the need to implement notifications for a variety of use cases and
 scenarios. Create a centralized generic service for notification that can be used by a variety
@@ -16,8 +16,6 @@ required)
  
 ## Deliverables 
 1. The code for the service in github with instructions on how to set it up and run it
-
-**/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\**
 
 ## Technologies
 
@@ -42,7 +40,7 @@ e.g: `http://localhost:8080/api/v1.0/notifier/{channelType}/notify`
    "body": "Hello user, Good noon",  
    "from": "target.notification.dev@gmail.com",  
    "subject": "Notification Service Test Subject",  
-   "to": "adityamoghe.java88@gmail.com"  
+   "to": "<username>@gmail.com"  
 }
 ```
 
@@ -57,7 +55,7 @@ e.g: `http://localhost:8080/api/v1.0/notifier/notifyAll`
    "body": "Hello user, Good noon",  
    "from": "target.notification.dev@gmail.com",  
    "subject": "Notification Service Test Subject",  
-   "to": "adityamoghe.java88@gmail.com"  
+   "to": "<username>@gmail.com"  
 }
 ```
  
@@ -76,7 +74,8 @@ To access Rest API doc: `http://localhost:8082/api`
 For Testing Access http://localhost:8082/swagger-ui.html#/
 
 ## Settings
-1. Make sure all email and slack properties are configured properly in `application.properties`.
+1. Make sure all email and slack properties are configured properly in `application.properties`. For Slack I created Bots and through that I am sending notification to Slack Channel.
 2. If G-Mail, configured as your mail service then set `Allow less secure apps = ON` in Sing-in & Security of your google account to send message properly .
+Note: I created test account through which I am sending notification to different channel, can refer same mail account.
 
 
